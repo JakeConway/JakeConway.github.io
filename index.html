@@ -15,16 +15,18 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2 class="header-light regular-pad">About this site</h2>
-              <p class="lead">Jekyll is a simple, blog-aware, static site generator. It takes a template
-              directory containing raw text files in various formats, runs it through
-              a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>)
-              and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and
-              spits out a complete, ready-to-publish static website suitable
-              for serving with your favorite web server. Jekyll also happens to be the engine
-              behind <a href="https://pages.github.com">GitHub Pages</a>, which means you can use Jekyll
-              to host your project’s page, blog, or website from GitHub’s servers <strong>for
-              free</strong>.</p>
+            <h2 class="header-light regular-pad">About</h2>
+              <p class="lead">I'm a PhD candidate in the 
+                <a href="http://dms.hms.harvard.edu/BIG/">Bioinformatics and Integrative Genomics (BIG) program</a> 
+                at Harvard Medical School, and a member of the <a href="https://vanallenlab.dana-farber.org/">Van Allen lab</a> 
+                at Dana-Farber Cancer Institute and The Broad Institute. My research focuses on melanoma genomics and transcriptomics, 
+                genomic correlates of immunotherapy response, and tumor clonal architecture and evolution. My research is supported by a 
+                <a href="https://www.grantome.com/grant/NIH/F31-CA239347-01"> National Insitute of Health (NIH) F31 award </a>
+                through the National Cancer Institute (NCI). </p>
+                <p class="lead"> My intentions for creating this site are twofold: (1) to serve as an online CV, and (2) to provide 
+                {% if page.sectionid=='docs' %} class="active" {% endif %}<a href="{{ "/docs/home/" | relative_url }}">documentation, resources, and hands-on examples</a> on how to run a variety of bioinformatic and statistical tools commonly used in cancer genomics, perform fundamental statical analyses, and develop a variety of machine learning models including neural networks. I've been extremely fortunate of the mentorship I've recieved in the Van Allen lab, and have enjoyed mentoring an increasing number of graduate students, medical students, and clinical fellows over the past year. My personal mentoring philosophy is to compress 
+                years worth of knowledge and experience into hands-on tutorials (with explainations!). 
+              </p>
         </div>
         <div class="col-md-6 text-center">
             <img src="{{ "/assets/img/jekyll-dark.png" | relative_url }}" alt="Jekyll logo" class="img-responsive">
