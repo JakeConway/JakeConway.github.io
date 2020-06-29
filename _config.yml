@@ -49,7 +49,19 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _CV
+    type: docs
+  values:
+    layout: docs
+    sectionid: CV
+    seo:
+      type: "WebPage"
+
 collections:
+  CV:
+    permalink: /:collection/:path/
+    output: true
   docs:
     permalink: /:collection/:path/
     output: true
