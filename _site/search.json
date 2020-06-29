@@ -11,7 +11,7 @@
     
     
     {
-      "title": "Themes",
+      "title": "Installing Bioconductor",
       "url": "/docs/themes/"
     },
   
@@ -24,25 +24,118 @@
   
 
   
+
+  
     
     
     {
-      "title": "Markdown Cheatsheet",
-      "url": "/docs/cheatsheet/"
+      "title": "Overview",
+      "url": "/docs/OverviewQC/"
     },
   
     
     
     {
-      "title": "Font Awesome Icon List",
-      "url": "/docs/font-awesome/"
+      "title": "Sequencing Coverage",
+      "url": "/docs/SequencingCoverage/"
     },
   
     
     
     {
-      "title": "Bootstrap Features",
-      "url": "/docs/bootstrap/"
+      "title": "Cross Sample Contamination",
+      "url": "/docs/CrossSampleContamination/"
+    },
+  
+    
+    
+    {
+      "title": "Tumor-in-normal",
+      "url": "/docs/TumorInNormal/"
+    },
+  
+    
+    
+    {
+      "title": "Tumor Purity",
+      "url": "/docs/purity/"
+    },
+  
+
+  
+
+  
+
+  
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewMutationalSignatures/"
+    },
+  
+    
+    
+    {
+      "title": "SomaticSignatures (NMF)",
+      "url": "/docs/SomaticSignatures/"
+    },
+  
+    
+    
+    {
+      "title": "deconstructSigs (NNLS)",
+      "url": "/docs/deconstructSigs/"
+    },
+  
+    
+    
+    {
+      "title": "SigMa (Likelihood)",
+      "url": "/docs/SigMa/"
+    },
+  
+    
+    
+    {
+      "title": "scarHRD",
+      "url": "/docs/scarHRD/"
+    },
+  
+    
+    
+    {
+      "title": "MSIsensor",
+      "url": "/docs/MSIsensor/"
+    },
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewDifferentialExpression/"
+    },
+  
+    
+    
+    {
+      "title": "edgeR",
+      "url": "/docs/edgeR/"
+    },
+  
+    
+    
+    {
+      "title": "DESeq2",
+      "url": "/docs/DESeq2/"
     },
   
 

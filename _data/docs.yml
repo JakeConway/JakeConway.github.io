@@ -4,8 +4,43 @@
   - themes
   - customization
 
-- title: Examples
+- title: Alignment
   docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+
+- title: Quality Control
+  docs:
+  - OverviewQC
+  - SequencingCoverage
+  - CrossSampleContamination
+  - TumorInNormal
+  - purity
+
+- title: Somatic Mutation Calling
+  docs:
+
+- title: Allelic Copy Number Calling
+  docs:
+
+- title: Mutational Signatures
+  docs:
+  - OverviewMutationalSignatures
+  - SomaticSignatures
+  - deconstructSigs
+  - SigMa
+  - scarHRD
+  - MSIsensor
+
+- title: Mutational Significance Analysis
+  docs:
+
+- title: Tumor Phylogenetics
+  docs:
+
+- title: Gene Set Analysis
+  docs:
+
+- title: Differential Expression
+  docs:
+  - OverviewDifferentialExpression
+  - edgeR
+  - DESeq2
