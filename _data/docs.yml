@@ -1,11 +1,23 @@
 - title: Getting Started
   docs:
   - home
-  - themes
-  - customization
+  - bioconductor
+  - important
 
 - title: Alignment
   docs:
+  - OverviewAlignment
+  - BWA
+  - CleanSam
+  - SortSam
+  - MarkDuplicates
+  - AddOrReplaceReadGroups
+  - BuildBamIndex
+  - RealignerTargetCreator
+  - IndelRealigner
+  - BaseRecalibration
+  - PrintReads
+  - PuttingItAllTogether
 
 - title: Quality Control
   docs:
@@ -17,9 +29,16 @@
 
 - title: Somatic Mutation Calling
   docs:
+  - OverviewSomaticMutations
+  - MuTect
+  - Strelka
+  - MuTect2
 
 - title: Allelic Copy Number Calling
   docs:
+  - OverviewAllelicCNA
+  - FACETS
+  - ABSOLUTE
 
 - title: Mutational Signatures
   docs:
@@ -32,12 +51,26 @@
 
 - title: Mutational Significance Analysis
   docs:
+  - OverviewSMG
+  - MutSigCV2
+  - OncodriveFML
+  - MutPanning
+  - BrownsMethod
 
 - title: Tumor Phylogenetics
   docs:
+  - OverviewPhylo
+  - CCF
+  - PhylogicNDT
+  - PyClone
+  - EXPANDS
 
 - title: Gene Set Analysis
   docs:
+  - OverviewGeneSets
+  - GSEA
+  - ssGSEA
+  - PathwayOverrepresentation
 
 - title: Differential Expression
   docs:

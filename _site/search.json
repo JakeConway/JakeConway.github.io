@@ -12,17 +12,101 @@
     
     {
       "title": "Installing Bioconductor",
-      "url": "/docs/themes/"
+      "url": "/docs/bioconductor/"
     },
   
     
     
     {
-      "title": "Customization",
-      "url": "/docs/customization/"
+      "title": "Important!",
+      "url": "/docs/important/"
     },
   
 
+  
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewAlignment/"
+    },
+  
+    
+    
+    {
+      "title": "Burrows-Wheeler Aligner (BWA)",
+      "url": "/docs/BWA/"
+    },
+  
+    
+    
+    {
+      "title": "CleanSam",
+      "url": "/docs/CleanSam/"
+    },
+  
+    
+    
+    {
+      "title": "SortSam",
+      "url": "/docs/SortSam/"
+    },
+  
+    
+    
+    {
+      "title": "MarkDuplicates",
+      "url": "/docs/MarkDuplicates/"
+    },
+  
+    
+    
+    {
+      "title": "AddOrReplaceReadGroups",
+      "url": "/docs/AddOrReplaceReadGroups/"
+    },
+  
+    
+    
+    {
+      "title": "BuildBamIndex",
+      "url": "/docs/BuildBamIndex/"
+    },
+  
+    
+    
+    {
+      "title": "RealignerTargetCreator",
+      "url": "/docs/RealignerTargetCreator/"
+    },
+  
+    
+    
+    {
+      "title": "IndelRealigner",
+      "url": "/docs/IndelRealigner/"
+    },
+  
+    
+    
+    {
+      "title": "Base Recalibration",
+      "url": "/docs/BaseRecalibration/"
+    },
+  
+    
+    
+    {
+      "title": "PrintReads",
+      "url": "/docs/PrintReads/"
+    },
+  
+    
+    
+    {
+      "title": "Putting it all together",
+      "url": "/docs/PuttingItAllTogether/"
+    },
   
 
   
@@ -63,7 +147,56 @@
   
 
   
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewSomaticMutations/"
+    },
+  
+    
+    
+    {
+      "title": "MuTect",
+      "url": "/docs/MuTect/"
+    },
+  
+    
+    
+    {
+      "title": "Strelka",
+      "url": "/docs/Strelka/"
+    },
+  
+    
+    
+    {
+      "title": "MuTect2",
+      "url": "/docs/MuTect2/"
+    },
+  
 
+  
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewAllelicCNA/"
+    },
+  
+    
+    
+    {
+      "title": "FACETS",
+      "url": "/docs/FACETS/"
+    },
+  
+    
+    
+    {
+      "title": "ABSOLUTE",
+      "url": "/docs/ABSOLUTE/"
+    },
   
 
   
@@ -111,9 +244,107 @@
   
 
   
-
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewSMG/"
+    },
+  
+    
+    
+    {
+      "title": "MutSigCV2",
+      "url": "/docs/MutSigCV2/"
+    },
+  
+    
+    
+    {
+      "title": "OncodriveFML",
+      "url": "/docs/OncodriveFML/"
+    },
+  
+    
+    
+    {
+      "title": "MutPanning",
+      "url": "/docs/MutPanning/"
+    },
+  
+    
+    
+    {
+      "title": "Brown's Method",
+      "url": "/docs/BrownsMethod/"
+    },
   
 
+  
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewPhylo/"
+    },
+  
+    
+    
+    {
+      "title": "Calculate Mutation CCFs",
+      "url": "/docs/CCF/"
+    },
+  
+    
+    
+    {
+      "title": "PhylogicNDT",
+      "url": "/docs/PhylogicNDT/"
+    },
+  
+    
+    
+    {
+      "title": "PyClone",
+      "url": "/docs/PyClone/"
+    },
+  
+    
+    
+    {
+      "title": "EXPANDS",
+      "url": "/docs/EXPANDS/"
+    },
+  
+
+  
+    
+    
+    {
+      "title": "Overview",
+      "url": "/docs/OverviewGeneSets/"
+    },
+  
+    
+    
+    {
+      "title": "GSEA",
+      "url": "/docs/GSEA/"
+    },
+  
+    
+    
+    {
+      "title": "ssGSEA",
+      "url": "/docs/ssGSEA/"
+    },
+  
+    
+    
+    {
+      "title": "Pathway Overrepresentation",
+      "url": "/docs/PathwayOverrepresentation/"
+    },
   
 
   

@@ -1,6 +1,6 @@
 ---
 title: Installing Bioconductor
-permalink: /docs/themes/
+permalink: /docs/bioconductor/
 ---
 
 ## What is Bioconductor?
