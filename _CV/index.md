@@ -3,5 +3,134 @@ title: Welcome
 permalink: /CV/home/
 redirect_from: /CV/index.html
 ---
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-## Getting started
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Jake Conway | Jekyll Template for Project Websites providing documentation and blog post pages.</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Jake Conway" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jekyll Template for Project Websites providing documentation and blog post pages." />
+<meta property="og:description" content="Jekyll Template for Project Websites providing documentation and blog post pages." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Jake Conway" />
+<script type="application/ld+json">
+{"headline":"Jake Conway","description":"Jekyll Template for Project Websites providing documentation and blog post pages.","@type":"WebSite","url":"http://localhost:4000/","name":"Jake Conway","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="alternate" type="application/rss+xml" title="Jake Conway" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="//">
+                <span><img src="/assets/img/logonav.png" alt="Logo"></span> Jake Conway
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/CV/home/">CV</a></li>
+                <li ><a href="/docs/home/">Docs</a></li>
+                <li ><a href="/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="search" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/JakeConway"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content" style="overflow: auto;">
+        <div class="wrapper">
+            <div class="col-md-2">
+                <h3 style="text-align:right; color:white;">1</h3>
+                <h5 style="text-align:right; color:white;">2</h5>
+                <p style="text-align:right; color:white;"><strong>3</strong><br><strong>4</strong></p>
+                <h5 style="text-align:right; color:white;">5</h5>
+                <p style="text-align:right;"><strong>Ph.D.</strong><br>Sep 2016 - present</p>
+                <p style="text-align:right;"><strong>B.S.</strong><br>Sep 2012 - May 2016<br>Concentration<br>Minor<br>Honors</p>
+                <h5 style="text-align:right; color:white;">6</h5>
+                <p style="text-align:right;"><strong>Software Developer</strong><br>Sep 2015 - Aug 2016<br>
+                    <i style="color:white;">break</i>
+                </p>
+                <h5 style="text-align:right; color:white;">7</h5>
+                <p style="text-align:right;"><strong>Ph.D. Candidate</strong><br>Jul 2017 - Present<br></p>
+            </div>
+            <div class="col-md-8">
+                <h3>Jake Conway</h3>
+                <h5>Current Position</h5>
+                <p><strong>Ph.D. Candidate</strong>, Bioinformatics and Integrative Genomics, Department of Biomedical Informatics, Harvard Medical School <br>
+                <strong>NIH NRSA F31 Fellow</strong>, Van Allen Lab, Dana-Farber Cancer Institute and The Broad Institute of Harvard and MIT</p>
+                <h5>Education</h5>
+                <p><strong>Harvard University</strong>, <i>Cambridge, MA, USA </i><br>
+                    Division of Medical Sciences: Bioinformatics and Integrative Genomics</p>
+                <p><strong>UMass Lowell</strong>, <i>Lowell, MA, USA</i> <br>
+                    Department of Biological Sciences: Biology <br>
+                    Bioinformatics <br>
+                    Mathematics <br>
+                    <i>Summa Cum Laude</i>
+                </p>
+                <h5>Work Experience</h5>
+                <p>Department of Biomedical Informatics <br>Harvard Medical School, <i>Boston, MA, USA</i><br>
+                    <i style="color:red;">Fill in</i>
+                </p>
+                <h5>Research Experience</h5>
+                <p>Van Allen Lab <br>Dana-Farber Cancer Institute, <i>Boston, MA, USA</i></p>
+                <h5>Professional Activities</h5>
+                <h5>Presentations</h5>
+                <h5>Publications</h5>
+                <h5>Software</h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            Jake Conway 2020 |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/'
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/assets/js/bootstrap.min.js "></script>
+<script src="/assets/js/typeahead.bundle.min.js "></script>
+
+<script src="/assets/js/main.js "></script>
+
+</body>
