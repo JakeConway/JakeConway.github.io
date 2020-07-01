@@ -1,5 +1,5 @@
 ---
-title: MSIsensor
+title: MSIsensor (Microsatellite Instability)
 permalink: /docs/MSIsensor/
 ---
 

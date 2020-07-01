@@ -82,7 +82,67 @@ redirect_from: /CV/index.html
                     <i style="color:white;">break</i>
                 </p>
                 <h5 style="text-align:right; color:white;">7</h5>
-                <p style="text-align:right;"><strong>Ph.D. Candidate</strong><br>Jul 2017 - Present<br></p>
+                <p style="text-align:right;"><strong>Ph.D. Candidate</strong><br>Jul 2017 - Present<br>
+                <i style="color:white;">break</i>
+                </p>
+                <h5 style="text-align:right; color:white;">8</h5>
+                <p style="text-align:right;"><strong>Interviewer</strong><br>2019 - 2020</p>
+                <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2018 - 2020</p>
+                <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2017</p>
+                <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2014</p>
+                <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2014</p>
+                <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2014</p>
+                <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2014</p>
+                <p style="text-align:right;"><strong>Tutor</strong><br>2014 - 2015</p>
+                <h5 style="text-align:right; color:white;">9</h5>
+                <p style="text-align:right;"><strong>Predoctoral</strong><br>2019 - present</p>
+                <p style="text-align:right;"><strong>Predoctoral</strong><br>2016 - 2019</p>
+                <h5 style="text-align:right; color:white;">10</h5>
+                <p style="text-align:right;"><strong>2020</strong><br>
+                <i style="color:white;">break</i>
+                </p>
+                <p style="text-align:right;"><strong>2019</strong><br>
+                <i style="color:white;">break</i> <br>
+                <i style="color:white;">break</i> <br>
+                <i style="color:white;">break</i>
+                </p>
+                <p style="text-align:right;"><strong>2019</strong><br>
+                <i style="color:white;">break</i>
+                </p>
+                <p style="text-align:right;"><strong>2018</strong><br>
+                <i style="color:white;">break</i>
+                </p>
+                <p style="text-align:right;"><strong>2018</strong><br>
+                <i style="color:white;">break</i><br>
+                <i style="color:white;">break</i>
+                </p>
+                <p style="text-align:right;"><strong>2017</strong><br>
+                <i style="color:white;">break</i>
+                </p>
+                <h5 style="text-align:right; color:white;">11</h5>
+                <p style="text-align:right;"><strong>Poster</strong><br>
+                2019
+                </p>
+                <p style="text-align:right;"><strong>Poster</strong><br>
+                2018
+                </p>
+                <p style="text-align:right;"><strong>Invited Speaker</strong><br>
+                2016
+                </p>
+                <p style="text-align:right;"><strong>Invited Speaker</strong><br>
+                2014
+                </p>
+                <h5 style="text-align:right; color:white;">12</h5>
+                <p style="text-align:right;"><strong>R Package</strong><br>
+                330K Downloads
+                </p>
+                <p style="text-align:right;"><strong>Shiny App</strong><br>
+                <i style="color:white;">break</i>
+                </p>
+                <h5 style="text-align:right; color:white;">12</h5>
+                <p style="text-align:right;"><strong>Phase II</strong><br>
+                2019
+                </p>
             </div>
             <div class="col-md-8">
                 <h3>Jake Conway</h3>
@@ -103,11 +163,85 @@ redirect_from: /CV/index.html
                     <i style="color:red;">Fill in</i>
                 </p>
                 <h5>Research Experience</h5>
-                <p>Van Allen Lab <br>Dana-Farber Cancer Institute, <i>Boston, MA, USA</i></p>
+                <p>Van Allen Lab <br>Dana-Farber Cancer Institute, <i>Boston, MA, USA</i><br>
+                 <i style="color:red;">Fill in</i>
+                </p>
                 <h5>Professional Activities</h5>
-                <h5>Presentations</h5>
+                <p>Computational Biologist Positions, Van Allen Lab<br>
+                Dana-Farber Cancer Institute, <i>Boston, MA, USA</i>
+                </p>
+                <p>Concepts in Genome Analysis (BMIF 201; Instructors: Shamil Sunyaev, Ph.D., Michael Baym, Ph.D., CZ Zhang, Ph.D.)<br>
+                Harvard Medical School, <i>Boston, MA, USA</i>
+                </p>
+                <p>Principles of Molecular Biology (BCMP 200; Instructor: Joseph Loparo, Ph.D.)<br>
+                Harvard Medical School, <i>Boston, MA, USA</i>
+                </p>
+                <p>Principles of Cell and Molecular Biology (BIOL.2200; Instructor: Carol Myers, Ph.D.)<br>
+                UMass Lowell, <i>Lowell, MA, USA</i>
+                </p>
+                <p>Genetics (BIOL.2350; Instructor: Wesley Savage, Ph.D.)<br>
+                UMass Lowell, <i>Lowell, MA, USA</i>
+                </p>
+                <p>Principles of Biology II (BIOL.1120; Instructor: Naomi Wernick, Ph.D.)<br>
+                UMass Lowell, <i>Lowell, MA, USA</i>
+                </p>
+                <p>Principles of Biology I (BIOL.1110; Instructor: Naomi Wernick, Ph.D.)<br>
+                UMass Lowell, <i>Lowell, MA, USA</i>
+                </p>
+                <p>Calculus I-III, Discrete Structures I, Introduction to Statistics, and Linear Algebra I 
+(Mathematics Department)<br>
+                UMass Lowell, <i>Lowell, MA, USA</i>
+                </p>
+                <h5>Fellowships and Funding</h5>
+                <p>Redefining the Molecular Landscape of Melanoma<br>
+                $121,188 &emsp; NIH Ruth L. Kirschstein Predoctoral Individual National Research Service Award (F31; NCI 1F31CA239347-01)
+                </p>
+                <p>Training in Bioinformatics and Integrative Genomics<br>
+                $112,470 &emsp; NIH/NHGRI Institutional National Research Service Award (T32; 4T32HG002295-14; PI: Park)
+                </p>
                 <h5>Publications</h5>
+                <p>
+                <strong><u>Conway JR</u></strong>, Dietlein F, Taylor-Weiner A, AlDubayan S, Vokes N, Keenan T, Reardon B, He MX, Margolis CA, Weirather J, Haq R, Schilling B, Hodi FS, Schadendorf D, Liu D, Van Allen EM. Integrated molecular drivers coordinate biological and clinical states in melanoma. <strong><i>In review</i></strong>
+                </p>
+                <p>
+                Liu D, Schilling B, Liu D, Sucker A, Livingstone E, Jerby-Arnon L, Zimmer L, Gutzmer R, Satzger I, Loquai C, Grabbe S, Vokes N, Margolis CA, <strong><u>Conway JR</u></strong>, He MX, Elmarakeby H, Dietlein F, Miao D, Tracy A, Gogas H, Goldinger SM, Utikal J, Blank CU, Rauschenberg R, von Bubnoff D, Krackhardt A, Weide B, Haferkamp S, Kiecker F, Izar B, Garraway L, Regev A, Flaherty K, Paschen A, Van Allen EM, Schadendorf D. Integrative molecular and clinical modeling of clinical outcomes to PD1 blockade in patients with metastatic melanoma. <strong><i>Nature Medicine</i></strong> (2019) 25(12):1916-1927. PMID: 31792460. DOI: 10.1038/s41591-019-0654-5.</p>
+                <p>
+                <strong><u>Conway JR</u></strong>, Warner JL, Rubinstein WS, Miller RS. Next-Generation Sequencing and the Clinical Oncology Workflow: Data Challenges, Proposed Solutions, and a Call to Action. <strong><i>JCO Precision Oncology</i></strong> (2019) (3): 1-10. PMID: TBD. DOI: 10.1200/PO.19.00232.
+                </p>
+                <p>
+                <strong><u>Conway JR</u></strong>, Kofman E, Mo SS, Elmarakeby H, Van Allen E. Genomics of response to immune checkpoint therapies for cancer: implications for precision medicine. <strong><i>Genome Medicine</i></strong> (2018) 10(1):93. PMID: 30497521. DOI: 10.1186/s13073-018-0605-7.
+                </p>
+                <p>
+                Sheng W, LaFleur MW, Nguyen TH, Chen S, Chakravarthy A, <strong><u>Conway JR</u></strong>, Li Y, Chen H, Yang H, Hsu PH, Van Allen EM, Freeman GJ, De Carvalho DD, He HH, Sharpe AH, Shi Y. LSD1 Ablation Stimulates Anti-tumor Immunity and Enables Checkpoint Blockade. <strong><i>Cell</i></strong> (2018) 174(3):549-563.e19. PMID: 29937226. DOI: 10.1016/j.cell.2018.05.052.
+                </p>
+                <p>
+                <strong><u>Conway JR</u></strong>, Lex A, Gehlenborg N. UpSetR: an R package for the visualization of intersecting sets and their properties. <strong><i>Bioinformatics</i></strong> (2017) 33(18):2938-2940. PMID: 28645171. DOI: 10.1093/bioinformatics/btx364.
+                </p>
+                <h5>Presentations</h5>
+                <p>The secondary genomic architecture of melanoma<br>
+                Applications of Cancer Computational Biology, AACR Annual Meeting, <i>Atlanta, GA, USA</i>
+                </p>
+                <p>Whole-exome analysis of 1,135 melanomas reveals significantly mutated cancer genes and copy number alterations<br>
+                Application of Bioinformatics to Cancer Biology Session, AACR Annual Meeting, <i>Chicago, IL, USA</i>
+                </p>
+                <p>Evaluation of Gene-Environment Interactions for Ovarian Cancer<br>
+                Pipelines into Biostatistics Annual Symposium, Dana-Farber Cancer Institute, <i>Boston, MA, USA</i>
+                </p>
+                <p>UpSetR: A novel R package for visualizing intersecting sets and their attributes<br>
+                Pipelines into Biostatistics Annual Symposium, Dana-Farber Cancer Institute, <i>Boston, MA, USA</i>
+                </p>
                 <h5>Software</h5>
+                <p>UpSetR<br>
+                A novel R package for visualizing intersecting sets and their attributes
+                </p>
+                <p>UpSetR Shiny App<br>
+                A Shiny wrapper for the UpSetR R package
+                </p>
+                <h5>Clinical Trial Experience</h5>
+                <p>
+                A phase II study of cisplatin and the Wee1 inhibitor adavosertib in metastatic triple-negative breast cancer (mTNBC)<br>
+                Keenan TE, Tan-Wasielewski Z, Trippa L, Kochupurakkal B, Guerriero JL, Tahara RK, Winship G, Osmani W, Andrews C, <strong><u>Conway JR</u></strong>, He MX, Pastorello R, Tracy A, Godin RE, Overmoyer BA, Winer EP, Mittendorf EA, Shapiro GI, Van Allen EM, Tolaney SM
+                </p>
             </div>
             <div class="col-md-2"></div>
         </div>
