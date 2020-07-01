@@ -3,4 +3,4 @@ title: Important!
 permalink: /docs/important/
 ---
 
-## Important
+## Coming soon

@@ -39,6 +39,7 @@
   - OverviewAllelicCNA
   - FACETS
   - ABSOLUTE
+  - GATKACNV
 
 - title: Mutational Signatures
   docs:

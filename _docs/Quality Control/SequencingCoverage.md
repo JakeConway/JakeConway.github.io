@@ -3,4 +3,4 @@ title: Sequencing Coverage
 permalink: /docs/SequencingCoverage/
 ---
 
-## Sequencing Coverage
+## Coming soon
