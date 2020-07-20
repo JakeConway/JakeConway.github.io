@@ -11,19 +11,19 @@
 
     <link rel="shortcut icon" href="/favicon.ico?1">
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Important! | Jake Conway</title>
+<title>Getting the data | Jake Conway</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Important!" />
+<meta property="og:title" content="Getting the data" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Coming soon" />
-<meta property="og:description" content="Coming soon" />
-<link rel="canonical" href="http://localhost:4000/docs/important/" />
-<meta property="og:url" content="http://localhost:4000/docs/important/" />
+<meta name="description" content="For most of the tutorials involving analysis downstream of somatic mutation calling, we’re going to be using the MAF for the skin cutaneous melanoma cohort. To flow seamlessly with the tutorials, we’re going to be downloading and accessing TCGA data through the TCGAbiolinks package from Bioconductor. If you haven’t downloaded Bioconductor or the TCGAbiolinks package yet, please follow the steps in Installing Bioconductor." />
+<meta property="og:description" content="For most of the tutorials involving analysis downstream of somatic mutation calling, we’re going to be using the MAF for the skin cutaneous melanoma cohort. To flow seamlessly with the tutorials, we’re going to be downloading and accessing TCGA data through the TCGAbiolinks package from Bioconductor. If you haven’t downloaded Bioconductor or the TCGAbiolinks package yet, please follow the steps in Installing Bioconductor." />
+<link rel="canonical" href="http://localhost:4000/docs/getting_data/" />
+<meta property="og:url" content="http://localhost:4000/docs/getting_data/" />
 <meta property="og:site_name" content="Jake Conway" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-01T05:16:45+02:00" />
+<meta property="article:published_time" content="2020-07-17T06:10:57+02:00" />
 <script type="application/ld+json">
-{"headline":"Important!","dateModified":"2020-07-01T05:16:45+02:00","datePublished":"2020-07-01T05:16:45+02:00","description":"Coming soon","@type":"WebPage","url":"http://localhost:4000/docs/important/","@context":"http://schema.org"}</script>
+{"headline":"Getting the data","dateModified":"2020-07-17T06:10:57+02:00","datePublished":"2020-07-17T06:10:57+02:00","description":"For most of the tutorials involving analysis downstream of somatic mutation calling, we’re going to be using the MAF for the skin cutaneous melanoma cohort. To flow seamlessly with the tutorials, we’re going to be downloading and accessing TCGA data through the TCGAbiolinks package from Bioconductor. If you haven’t downloaded Bioconductor or the TCGAbiolinks package yet, please follow the steps in Installing Bioconductor.","@type":"WebPage","url":"http://localhost:4000/docs/getting_data/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -98,7 +98,11 @@
           
             
             
-            <a class="list-group-item active" href="/docs/important/">Important!</a>
+            <a class="list-group-item " href="/docs/commandlinetools/">Command line tools</a>
+          
+            
+            
+            <a class="list-group-item active" href="/docs/getting_data/">Getting the data</a>
           
         </div>
       </div>
@@ -266,7 +270,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/GATKACNV/">GATK3.8 ACNV</a>
+            <a class="list-group-item " href="/docs/GATKACNV/">GATK ACNV</a>
           
         </div>
       </div>
@@ -332,7 +336,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/MutSigCV2/">MutSigCV2</a>
+            <a class="list-group-item " href="/docs/MutSigCV2/">MutSigCV</a>
           
             
             
@@ -344,7 +348,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/BrownsMethod/">Brown's Method</a>
+            <a class="list-group-item " href="/docs/BrownsMethod/">Brown's Method (for combining p-values)</a>
           
         </div>
       </div>
@@ -454,13 +458,76 @@
         </div>
 
         <div class="col-md-8">
-            <h1>Important!</h1>
-            <div id="markdown-content-container"><h2 id="coming-soon">Coming soon</h2>
+            <h1>Getting the data</h1>
+            <div id="markdown-content-container"><p>For most of the tutorials involving analysis downstream of somatic mutation calling, we’re going to be using the MAF for the skin cutaneous melanoma cohort. To flow seamlessly with the tutorials, we’re going to be downloading and accessing TCGA data through the TCGAbiolinks package from Bioconductor. If you haven’t downloaded Bioconductor or the TCGAbiolinks package yet, please follow the steps in Installing Bioconductor.</p>
+
+<p>Loading Bioconductor packages is the same as loading any other R package.</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">TCGAbiolinks</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The following code will download and generate the MAF for the TCGA-SKCM cohort.</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">query</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">GDCquery</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"TCGA-SKCM"</span><span class="p">,</span><span class="w"> 
+                  </span><span class="n">data.category</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Simple nucleotide variation"</span><span class="p">,</span><span class="w"> 
+                  </span><span class="n">data.type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Simple somatic mutation"</span><span class="p">,</span><span class="w">
+                  </span><span class="n">access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+                  </span><span class="n">file.type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"SKCM_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf"</span><span class="p">,</span><span class="w">
+                  </span><span class="n">legacy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+</span><span class="n">GDCdownload</span><span class="p">(</span><span class="n">query</span><span class="p">)</span><span class="w">
+</span><span class="n">maf</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">GDCprepare</span><span class="p">(</span><span class="n">query</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="how-do-i-choose-the-filetype">How do I choose the file.type?</h2>
+<p>If you follow the online vignettes for downloading TCGA data through TCGAbiolinks, you’ll notice that they performed a query step without the <strong>file.type</strong> parameter. For the case of the TCGA-SKCM cohort, there is only 1 MAF file to choose from, so this example is straightforward. However, when downloading somatic mutation data for another TCGA cohort there will likely be multiple MAF files to pick from, and you might be confused on which one to choose.</p>
+
+<p>If we query the TCGA-OV (ovarian cancer) cohort, which we will use when performing mutational signagure analysis with SigMA, you’ll notice there are 9 MAF files to pick from. When choosing which MAF file to use from this resource, there are 3 things I consider:</p>
+<ol>
+  <li>The number of samples</li>
+  <li>The sequencing platform</li>
+  <li>The tissue definition</li>
+</ol>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">query</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">GDCquery</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"TCGA-OV"</span><span class="p">,</span><span class="w"> 
+                  </span><span class="n">data.category</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Simple nucleotide variation"</span><span class="p">,</span><span class="w"> 
+                  </span><span class="n">data.type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Simple somatic mutation"</span><span class="p">,</span><span class="w">
+                  </span><span class="n">access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+                  </span><span class="n">legacy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The sequencing platform and tissue information can be accessed as followed:</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">query.results</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">TCGAbiolinks</span><span class="o">::</span><span class="n">getResults</span><span class="p">(</span><span class="n">query</span><span class="p">)</span><span class="w">
+
+</span><span class="n">query.results</span><span class="o">$</span><span class="n">platform</span><span class="w">
+</span><span class="n">query.results</span><span class="o">$</span><span class="n">tissue.definition</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The number of samples in each MAF file can be determined using the code below. What you’ll notice is some of the MAF files only contain a subset of the samples.</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n.samples</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sapply</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">cases</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">strsplit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">","</span><span class="p">)[[</span><span class="m">1</span><span class="p">]]</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="w">
+</span><span class="p">})</span><span class="w">
+
+</span><span class="n">n.samples</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The sequencing platform is important for several reasons. Besides each platform having their pros and cons, if you plan on integrating TCGA samples into your analysis with another cohort, or use TCGA to validate a finding in your cohort, it is preferable to match up the sequencing technologies. The 4 sequencing platforms used here are <strong>Illimina GA (Genome Analyzer)</strong>, <strong>Illimina HiSeq</strong>, <strong>ABI SOLiD</strong>, and <strong>ABI capillary sequencer</strong>.</p>
+
+<p><strong>Illumina GA</strong> is Illumina’s original sequencing technology, which is no longer being updated.<br />
+<strong>ABI capillary sequencing</strong> is basically old school Sanger sequencing. You’ll notice that the number of samples with capillary sequencing are much lower than for the other sequencing technologies.</p>
+
+<p><strong>Illumina HiSeq</strong> and <strong>ABI SOLiD</strong> are the two sequencing technologies that you’d most likely choose between if you were just about to sequence new samples. <strong>Illumina HiSeq</strong> is Illumina’s main workhorse. Compared to <strong>ABI SOLiD</strong> is has longer read lengths (200-250 bases vs. 35), faster turnaround times (3-10 days vs. 7-14), and produces higher throughput (150-800 gigabases/run vs. 155 gigabases/run). On the other hand, <strong>ABI SOLiD</strong> has upwards of a 99.99% base calling accuracy compared to 99.74 by <strong>Illumina HiSeq</strong>. While that doesn’t seem like a huge difference, the number of incorrect base calls adds up given the throughput of these technologies.</p>
+
+<ul>
+  <li>The reason for the variation in read lengths and throughput for <strong>Illumina HiSeq</strong> is because there are multiple <strong>Illumina HiSeq</strong> sequencing technologies (e.g. Illumina HiSeq 2500 vs. Illumina HiSeq 2500 Rapid Run).</li>
+</ul>
+
+<h2 id="how-do-i-download-other-data">How do I download other data?</h2>
+<p>To download other data types (e.g. copy number, RNA expression, methylation, clinical data) just changed the <strong>Data.category</strong> and <strong>Data.type</strong> inputs. A list of data categories and data types can be downloaded from: <a href="https://docs.google.com/spreadsheets/d/1f98kFdj9mxVDc1dv4xTZdx8iWgUiDYO-qiFJINvmTZs/export?format=csv&amp;gid=2046985454">https://docs.google.com/spreadsheets/d/1f98kFdj9mxVDc1dv4xTZdx8iWgUiDYO-qiFJINvmTZs/export?format=csv&amp;gid=2046985454</a></p>
 </div>
             <div style="clear:both;">
               <p class="text-center">
                 <br />
-                <a target="_blank" href="https://github.com/JakeConway/blob/gh-pages/_docs/important.md" class="btn btn-default" role="button">
+                <a target="_blank" href="https://github.com/JakeConway/blob/gh-pages/_docs/getting_data.md" class="btn btn-default" role="button">
                   <i class="fa fa-pencil fa-lg"></i> Improve this page
                 </a>
               </p>
@@ -480,12 +547,15 @@
 
   
   
+
+  
+  
     <ul class="pager">
       
         
         
         <li class="previous">
-          <a href="/docs/bioconductor/">
+          <a href="/docs/commandlinetools/">
             <span aria-hidden="true">&larr;</span> Previous
           </a>
         </li>

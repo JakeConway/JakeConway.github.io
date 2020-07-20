@@ -2,7 +2,8 @@
   docs:
   - home
   - bioconductor
-  - important
+  - commandlinetools
+  - getting_data
 
 - title: Alignment
   docs:

@@ -1,6 +1,6 @@
 ---
-title: GATK3.8 ACNV
+title: GATK ACNV
 permalink: /docs/GATKACNV/
 ---
 
-## Coming soon
+## GATK version required

@@ -15,15 +15,15 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="scarHRD (Homologous Recombination Deficiency)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Coming soon" />
-<meta property="og:description" content="Coming soon" />
+<meta name="description" content="To run scarHRD we can use the allele specific copy number calls from either FACETS or ABSOLUTE. For this example, we will be using the FACETS output." />
+<meta property="og:description" content="To run scarHRD we can use the allele specific copy number calls from either FACETS or ABSOLUTE. For this example, we will be using the FACETS output." />
 <link rel="canonical" href="http://localhost:4000/docs/scarHRD/" />
 <meta property="og:url" content="http://localhost:4000/docs/scarHRD/" />
 <meta property="og:site_name" content="Jake Conway" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-01T05:16:45+02:00" />
+<meta property="article:published_time" content="2020-07-17T06:10:57+02:00" />
 <script type="application/ld+json">
-{"headline":"scarHRD (Homologous Recombination Deficiency)","dateModified":"2020-07-01T05:16:45+02:00","datePublished":"2020-07-01T05:16:45+02:00","description":"Coming soon","@type":"WebPage","url":"http://localhost:4000/docs/scarHRD/","@context":"http://schema.org"}</script>
+{"headline":"scarHRD (Homologous Recombination Deficiency)","dateModified":"2020-07-17T06:10:57+02:00","datePublished":"2020-07-17T06:10:57+02:00","description":"To run scarHRD we can use the allele specific copy number calls from either FACETS or ABSOLUTE. For this example, we will be using the FACETS output.","@type":"WebPage","url":"http://localhost:4000/docs/scarHRD/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -98,7 +98,11 @@
           
             
             
-            <a class="list-group-item " href="/docs/important/">Important!</a>
+            <a class="list-group-item " href="/docs/commandlinetools/">Command line tools</a>
+          
+            
+            
+            <a class="list-group-item " href="/docs/getting_data/">Getting the data</a>
           
         </div>
       </div>
@@ -266,7 +270,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/GATKACNV/">GATK3.8 ACNV</a>
+            <a class="list-group-item " href="/docs/GATKACNV/">GATK ACNV</a>
           
         </div>
       </div>
@@ -332,7 +336,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/MutSigCV2/">MutSigCV2</a>
+            <a class="list-group-item " href="/docs/MutSigCV2/">MutSigCV</a>
           
             
             
@@ -344,7 +348,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/BrownsMethod/">Brown's Method</a>
+            <a class="list-group-item " href="/docs/BrownsMethod/">Brown's Method (for combining p-values)</a>
           
         </div>
       </div>
@@ -455,7 +459,72 @@
 
         <div class="col-md-8">
             <h1>scarHRD (Homologous Recombination Deficiency)</h1>
-            <div id="markdown-content-container"><h2 id="coming-soon">Coming soon</h2>
+            <div id="markdown-content-container"><p>To run scarHRD we can use the allele specific copy number calls from either FACETS or ABSOLUTE. For this example, we will be using the FACETS output.</p>
+
+<h2 id="generating-input-file">Generating input file</h2>
+<p>To generate the input file for scarHRD we need the allele specific copy number calls from the FACETS cncf table, and the tumor ploidy value.</p>
+
+<p>If you’re running scarHRD in the same environment as the FACETS run:</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
+
+</span><span class="n">seg</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">SampleID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"SAMPLE_ID"</span><span class="p">,</span><span class="w">
+                  </span><span class="n">Chromosome</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">chrom</span><span class="p">,</span><span class="w">
+                  </span><span class="n">Start_position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">start</span><span class="p">,</span><span class="w">
+                  </span><span class="n">End_position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">end</span><span class="p">,</span><span class="w">
+                  </span><span class="n">total_cn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">tcn.em</span><span class="p">,</span><span class="w">
+                  </span><span class="n">A_cn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">tcn.em</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">lcn.em</span><span class="p">,</span><span class="w">
+                  </span><span class="n">B_cn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">cncf</span><span class="o">$</span><span class="n">lcn.em</span><span class="p">,</span><span class="w">
+                  </span><span class="n">ploidy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fit</span><span class="o">$</span><span class="n">ploidy</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># remove sex chromosomes</span><span class="w">
+</span><span class="n">seg</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seg</span><span class="p">[</span><span class="n">which</span><span class="p">(</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">23</span><span class="p">),</span><span class="w"> </span><span class="p">]</span><span class="w">
+
+</span><span class="c1"># format chromosome column</span><span class="w">
+</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.character</span><span class="p">(</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="p">)</span><span class="w">
+</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"chr"</span><span class="p">,</span><span class="w"> </span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># write data.table to file because scarHRD takes file path as input</span><span class="w">
+</span><span class="n">write.table</span><span class="p">(</span><span class="n">seg</span><span class="p">,</span><span class="w"> </span><span class="s2">"~/Downloads/scarHRD_input.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'\t'</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If you’re running scarHRD on the files we saved from the FACETS output:</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
+
+</span><span class="n">summary.output</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fread</span><span class="p">(</span><span class="s2">"~/Downloads/facets_summary.txt"</span><span class="p">)</span><span class="w">
+</span><span class="n">seg</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fread</span><span class="p">(</span><span class="s2">"~/Downloads/cncf_table.txt"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># make column for major copy number</span><span class="w">
+</span><span class="n">seg</span><span class="o">$</span><span class="n">mcn</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seg</span><span class="o">$</span><span class="n">tcn.em</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">seg</span><span class="o">$</span><span class="n">lcn.em</span><span class="w">
+
+</span><span class="c1"># only keep necessary columns</span><span class="w">
+</span><span class="n">seg</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seg</span><span class="p">[</span><span class="w"> </span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="s2">"sample_id"</span><span class="p">,</span><span class="w"> </span><span class="s2">"chrom"</span><span class="p">,</span><span class="w"> </span><span class="s2">"start"</span><span class="p">,</span><span class="w"> </span><span class="s2">"end"</span><span class="p">,</span><span class="w"> </span><span class="s2">"tcn.em"</span><span class="p">,</span><span class="w"> </span><span class="s2">"mcn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"lcn.em"</span><span class="p">)]</span><span class="w">
+
+</span><span class="c1"># add ploidy information</span><span class="w">
+</span><span class="n">seg</span><span class="o">$</span><span class="n">ploidy</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">summary.output</span><span class="p">[</span><span class="n">match</span><span class="p">(</span><span class="n">seg</span><span class="o">$</span><span class="n">sample_id</span><span class="p">,</span><span class="w"> </span><span class="n">summary.output</span><span class="o">$</span><span class="n">sample_id</span><span class="p">),</span><span class="w"> </span><span class="p">]</span><span class="o">$</span><span class="n">ploidy</span><span class="w">
+
+</span><span class="c1"># rename columns </span><span class="w">
+</span><span class="nf">names</span><span class="p">(</span><span class="n">seg</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"SampleID"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Chromosome"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Start_position"</span><span class="p">,</span><span class="w"> </span><span class="s2">"End_position"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"total_cn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"A_cn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B_cn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"ploidy"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># remove sex chromosomes</span><span class="w">
+</span><span class="n">seg</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seg</span><span class="p">[</span><span class="n">which</span><span class="p">(</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">23</span><span class="p">),</span><span class="w"> </span><span class="p">]</span><span class="w">
+
+</span><span class="c1"># format chromosome column</span><span class="w">
+</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.character</span><span class="p">(</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="p">)</span><span class="w">
+</span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"chr"</span><span class="p">,</span><span class="w"> </span><span class="n">seg</span><span class="o">$</span><span class="n">Chromosome</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># write data.table to file because scarHRD takes file path as input</span><span class="w">
+</span><span class="n">write.table</span><span class="p">(</span><span class="n">seg</span><span class="p">,</span><span class="w"> </span><span class="s2">"~/Downloads/scarHRD_input.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'\t'</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="running-scarhrd">Running scarHRD</h2>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">scarHRD</span><span class="p">)</span><span class="w">
+
+</span><span class="n">scarHRD</span><span class="o">::</span><span class="n">scar_score</span><span class="p">(</span><span class="s2">"~/Downloads/scarHRD_input.txt"</span><span class="p">,</span><span class="w">
+                    </span><span class="n">seqz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w">
+                    </span><span class="n">reference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"grch37"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
 </div>
             <div style="clear:both;">
               <p class="text-center">
@@ -471,6 +540,9 @@
 
 
 
+
+  
+  
 
   
   

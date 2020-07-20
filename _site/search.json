@@ -18,8 +18,15 @@
     
     
     {
-      "title": "Important!",
-      "url": "/docs/important/"
+      "title": "Command line tools",
+      "url": "/docs/commandlinetools/"
+    },
+  
+    
+    
+    {
+      "title": "Getting the data",
+      "url": "/docs/getting_data/"
     },
   
 
@@ -201,7 +208,7 @@
     
     
     {
-      "title": "GATK3.8 ACNV",
+      "title": "GATK ACNV",
       "url": "/docs/GATKACNV/"
     },
   
@@ -261,7 +268,7 @@
     
     
     {
-      "title": "MutSigCV2",
+      "title": "MutSigCV",
       "url": "/docs/MutSigCV2/"
     },
   
@@ -282,7 +289,7 @@
     
     
     {
-      "title": "Brown's Method",
+      "title": "Brown's Method (for combining p-values)",
       "url": "/docs/BrownsMethod/"
     },
   

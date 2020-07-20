@@ -11,19 +11,19 @@
 
     <link rel="shortcut icon" href="/favicon.ico?1">
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>MutSigCV2 | Jake Conway</title>
+<title>MutSigCV | Jake Conway</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="MutSigCV2" />
+<meta property="og:title" content="MutSigCV" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Coming soon" />
-<meta property="og:description" content="Coming soon" />
+<meta name="description" content="The simplest way to run MutSigCV is through genepattern.org." />
+<meta property="og:description" content="The simplest way to run MutSigCV is through genepattern.org." />
 <link rel="canonical" href="http://localhost:4000/docs/MutSigCV2/" />
 <meta property="og:url" content="http://localhost:4000/docs/MutSigCV2/" />
 <meta property="og:site_name" content="Jake Conway" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-01T05:16:45+02:00" />
+<meta property="article:published_time" content="2020-07-17T06:10:57+02:00" />
 <script type="application/ld+json">
-{"headline":"MutSigCV2","dateModified":"2020-07-01T05:16:45+02:00","datePublished":"2020-07-01T05:16:45+02:00","description":"Coming soon","@type":"WebPage","url":"http://localhost:4000/docs/MutSigCV2/","@context":"http://schema.org"}</script>
+{"headline":"MutSigCV","dateModified":"2020-07-17T06:10:57+02:00","datePublished":"2020-07-17T06:10:57+02:00","description":"The simplest way to run MutSigCV is through genepattern.org.","@type":"WebPage","url":"http://localhost:4000/docs/MutSigCV2/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -98,7 +98,11 @@
           
             
             
-            <a class="list-group-item " href="/docs/important/">Important!</a>
+            <a class="list-group-item " href="/docs/commandlinetools/">Command line tools</a>
+          
+            
+            
+            <a class="list-group-item " href="/docs/getting_data/">Getting the data</a>
           
         </div>
       </div>
@@ -266,7 +270,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/GATKACNV/">GATK3.8 ACNV</a>
+            <a class="list-group-item " href="/docs/GATKACNV/">GATK ACNV</a>
           
         </div>
       </div>
@@ -332,7 +336,7 @@
           
             
             
-            <a class="list-group-item active" href="/docs/MutSigCV2/">MutSigCV2</a>
+            <a class="list-group-item active" href="/docs/MutSigCV2/">MutSigCV</a>
           
             
             
@@ -344,7 +348,7 @@
           
             
             
-            <a class="list-group-item " href="/docs/BrownsMethod/">Brown's Method</a>
+            <a class="list-group-item " href="/docs/BrownsMethod/">Brown's Method (for combining p-values)</a>
           
         </div>
       </div>
@@ -454,8 +458,41 @@
         </div>
 
         <div class="col-md-8">
-            <h1>MutSigCV2</h1>
-            <div id="markdown-content-container"><h2 id="coming-soon">Coming soon</h2>
+            <h1>MutSigCV</h1>
+            <div id="markdown-content-container"><p>The simplest way to run MutSigCV is through <a href="http://www.genepattern.org/">genepattern.org</a>.</p>
+
+<p>At the top of the page click Run &gt; Public Server.</p>
+
+<p>If you haven’t already, <a href="http://cloud.genepattern.org/gp/pages/registerUser.jsf">register</a> for an account on the website.</p>
+
+<p>Once you’ve logged in:</p>
+<ol>
+  <li>Click Browse Modules</li>
+  <li>Scroll down to mutational significance analysis</li>
+  <li>Click MutSigCV</li>
+</ol>
+
+<h2 id="generating-the-mutation-table-file">Generating the mutation table file</h2>
+
+<p>The mutation table file is just a MAF file, so just save the MAF file downloaded through TCGAbiolinks locally.</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">write.table</span><span class="p">(</span><span class="n">maf</span><span class="p">,</span><span class="w"> </span><span class="s2">"~/Downloads/TCGA_SKCM.maf"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'\t'</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="running-mutsigcv">Running MutSigCV</h2>
+<p>After saving the MAF file locally, upload it to the <strong>mutation table file</strong> input by clicking the Upload File button.</p>
+
+<p>The remaining inputs to MutSigCV include 3 reference files, which are listed below:<br />
+<strong>coverage table file:</strong> ftp://ftp.broadinstitute.org/pub/genepattern/example_files/MutSigCV_1.3/exome_full192.coverage.txt<br />
+<strong>covariates table file:</strong> ftp://ftp.broadinstitute.org/pub/genepattern/example_files/MutSigCV_1.3/gene.covariates.txt<br />
+<strong>mutation type dictionary:</strong> ftp://ftp.broadinstitute.org/pub/genepattern/example_files/MutSigCV_1.3/mutation_type_dictionary_file.txt</p>
+
+<p>Fill out the 2 remaining inputs as follows:<br />
+<strong>output filename base:</strong> TCGA_SKCM<br />
+<strong>genome build:</strong> hg19</p>
+
+<p>Click Run!</p>
+
+<h2 id="interpreting-the-output">Interpreting the output</h2>
 </div>
             <div style="clear:both;">
               <p class="text-center">
@@ -471,6 +508,9 @@
 
 
 
+
+  
+  
 
   
   
