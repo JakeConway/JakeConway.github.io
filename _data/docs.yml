@@ -54,7 +54,7 @@
 - title: Mutational Significance Analysis
   docs:
   - OverviewSMG
-  - MutSigCV2
+  - MutSigCV
   - OncodriveFML
   - MutPanning
   - BrownsMethod
