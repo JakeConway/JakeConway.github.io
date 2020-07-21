@@ -1,6 +1,6 @@
 ---
 title: MutSigCV
-permalink: /docs/MutSigCV2/
+permalink: /docs/MutSigCV/
 ---
 
 The simplest way to run MutSigCV is through [genepattern.org](http://www.genepattern.org/).
