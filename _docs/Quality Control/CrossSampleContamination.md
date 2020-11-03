@@ -28,9 +28,9 @@ java -Xmx4096m -jar /usr/local/bin/GenomeAnalysisTK.jar \
 The descriptions of the inputs are as follows:  
 **-R** Reference FASTA file for the genome reference used (e.g. Hg19 or Hg38)  
 **-I** BAM file that we want cross-individual information on  
-**-l**  logging level
+**-l**  logging level  
 **-pf** Reference file containing population allele frequencies for each SNP in HapMap  
-**-o** output file name
+**-o** output file name  
 **-L** Interval list over which to operate (dbSnpSix sites)  
 **-L** Interval list over which to operate (target intervals used for whole-exome bait sets)  
 **-isr**  Approach for merging interval lists (here we're saying only sites included in whole-exome bait set that overlap with dbSNP sites)  
