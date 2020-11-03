@@ -15,15 +15,15 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Command line tools" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="For the tools that run on the command line, I’ve set up dockers with all of the requirements installed." />
-<meta property="og:description" content="For the tools that run on the command line, I’ve set up dockers with all of the requirements installed." />
+<meta name="description" content="For the tools that run on the command line, I’ve set up dockers with all of the requirements installed. One thing of note is that due to the growing size and quantity of data being generated, most of our work involving computational methods for data generation is typically performed on the cloud. However, when performing a deep dive into one or a few samples, it is feasible run these methods locally depending on the size of the input files. This will be the case with the examples listed throughout the documentation." />
+<meta property="og:description" content="For the tools that run on the command line, I’ve set up dockers with all of the requirements installed. One thing of note is that due to the growing size and quantity of data being generated, most of our work involving computational methods for data generation is typically performed on the cloud. However, when performing a deep dive into one or a few samples, it is feasible run these methods locally depending on the size of the input files. This will be the case with the examples listed throughout the documentation." />
 <link rel="canonical" href="http://localhost:4000/docs/commandlinetools/" />
 <meta property="og:url" content="http://localhost:4000/docs/commandlinetools/" />
 <meta property="og:site_name" content="Jake Conway" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-11-03T16:50:04+01:00" />
+<meta property="article:published_time" content="2020-11-03T22:30:32+01:00" />
 <script type="application/ld+json">
-{"headline":"Command line tools","dateModified":"2020-11-03T16:50:04+01:00","datePublished":"2020-11-03T16:50:04+01:00","description":"For the tools that run on the command line, I’ve set up dockers with all of the requirements installed.","@type":"WebPage","url":"http://localhost:4000/docs/commandlinetools/","@context":"http://schema.org"}</script>
+{"headline":"Command line tools","dateModified":"2020-11-03T22:30:32+01:00","datePublished":"2020-11-03T22:30:32+01:00","description":"For the tools that run on the command line, I’ve set up dockers with all of the requirements installed. One thing of note is that due to the growing size and quantity of data being generated, most of our work involving computational methods for data generation is typically performed on the cloud. However, when performing a deep dive into one or a few samples, it is feasible run these methods locally depending on the size of the input files. This will be the case with the examples listed throughout the documentation.","@type":"WebPage","url":"http://localhost:4000/docs/commandlinetools/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -455,14 +455,35 @@
 
         <div class="col-md-8">
             <h1>Command line tools</h1>
-            <div id="markdown-content-container"><p>For the tools that run on the command line, I’ve set up dockers with all of the requirements installed.</p>
+            <div id="markdown-content-container"><p>For the tools that run on the command line, I’ve set up dockers with all of the requirements installed. <strong>One thing of note is that due to the growing size and quantity of data being generated, most of our work involving computational methods for data generation is typically performed on the cloud. However, when performing a deep dive into one or a few samples, it is feasible run these methods locally depending on the size of the input files.</strong> This will be the case with the examples listed throughout the documentation.</p>
 
 <h2 id="installing-docker">Installing Docker</h2>
+<p>Docker is available for Mac, Windows, and Linux distributions. Instructions for installing Docker can be found on the <a href="https://docs.docker.com/get-docker/">Docker website</a>.</p>
 
 <h2 id="downloading-docker-images">Downloading Docker images</h2>
-<p>Once Docker is installed, the Docker images can be downloaded from Dockerhub using the Docker <strong>pull</strong> command.</p>
+<p>Docker Hub is the most popular repository service (similar to GitHub) for hosting and sharing Docker images. Once Docker is installed, the Docker images can be downloaded from Docker Hub using the Docker <strong>pull</strong> command. As an example, we’re going to pull the GATK3.7 image from the <a href="https://hub.docker.com/u/broadinstitute">Broad Institue’s Docker Hub page</a>. The code below can be interpreted as pull the <code class="language-plaintext highlighter-rouge">3.7-0</code> version of the Docker image from the <code class="language-plaintext highlighter-rouge">broadinstitute/gatk3</code> repository.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull broadinstitute/gatk3:3.7-0
+</code></pre></div></div>
 
 <h2 id="running-docker-containers">Running Docker containers</h2>
+<p>To run a Docker container, or virtualized run-time environment, based off a Docker image, we must first need to obtain the Image ID. To see a list of images in your local Docker environment and their attributes (including the Image ID), the following command line code can be used:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker images
+</code></pre></div></div>
+
+<p>To run a container based off the <code class="language-plaintext highlighter-rouge">broadinstitute/gatk3:3.7-0</code> image, copy and paste the Image ID output by <code class="language-plaintext highlighter-rouge">docker images</code> into the following line of code:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it $image_id /bin/bash
+</code></pre></div></div>
+
+<p>After running the line above, you will now be in the virtual run-time environment that contains GATK3.7 and all required dependencies. To check this, we can run the following line of code to get the help documentation for ContEst, a GATK tool used to determine cross-individual contamination of DNA samples.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -jar /usr/local/bin/GenomeAnalysisTK.jar -T ContEst -h
+</code></pre></div></div>
+<p>To copy files from your local computer into a docker container, we first need to get the Container ID. To get the Container ID we can use the following line of code:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps
+</code></pre></div></div>
+<p>To then copy a file from your local computer into the Docker container we can then use the following line of code:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker cp /local_path/file.txt $container_id:/path_in_container/file.txt
+</code></pre></div></div>
 </div>
             <div style="clear:both;">
               <p class="text-center">
