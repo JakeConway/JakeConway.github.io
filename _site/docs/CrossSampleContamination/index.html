@@ -15,15 +15,15 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Cross Sample Contamination" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ContEst (GATK 3.7)" />
-<meta property="og:description" content="ContEst (GATK 3.7)" />
+<meta name="description" content="During sample preparation, DNA is susceptible to cross-contamination from other sources of DNA. Three of the most common types of contamination are 1) cross-individual contamination, 2) within-individual contaminationm and 3) cross-species contamination." />
+<meta property="og:description" content="During sample preparation, DNA is susceptible to cross-contamination from other sources of DNA. Three of the most common types of contamination are 1) cross-individual contamination, 2) within-individual contaminationm and 3) cross-species contamination." />
 <link rel="canonical" href="http://localhost:4000/docs/CrossSampleContamination/" />
 <meta property="og:url" content="http://localhost:4000/docs/CrossSampleContamination/" />
 <meta property="og:site_name" content="Jake Conway" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-31T04:03:38+01:00" />
+<meta property="article:published_time" content="2020-11-03T15:22:35+01:00" />
 <script type="application/ld+json">
-{"headline":"Cross Sample Contamination","dateModified":"2020-10-31T04:03:38+01:00","datePublished":"2020-10-31T04:03:38+01:00","description":"ContEst (GATK 3.7)","@type":"WebPage","url":"http://localhost:4000/docs/CrossSampleContamination/","@context":"http://schema.org"}</script>
+{"headline":"Cross Sample Contamination","dateModified":"2020-11-03T15:22:35+01:00","datePublished":"2020-11-03T15:22:35+01:00","description":"During sample preparation, DNA is susceptible to cross-contamination from other sources of DNA. Three of the most common types of contamination are 1) cross-individual contamination, 2) within-individual contaminationm and 3) cross-species contamination.","@type":"WebPage","url":"http://localhost:4000/docs/CrossSampleContamination/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -459,8 +459,12 @@
 
         <div class="col-md-8">
             <h1>Cross Sample Contamination</h1>
-            <div id="markdown-content-container"><h2 id="contest-gatk-37">ContEst (GATK 3.7)</h2>
+            <div id="markdown-content-container"><p>During sample preparation, DNA is susceptible to cross-contamination from other sources of DNA. Three of the most common types of contamination are 1) cross-individual contamination, 2) within-individual contaminationm and 3) cross-species contamination.</p>
 
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3167057/">ContEst</a> can be used to identify cross-individual contamination, while <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5027494/">FACETS</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6528031/">DeTiN</a> can be used to identify within-individual contamination. Specifically, FACETS can be used to detect normal DNA contamination of tumor DNA, commonly referred to as tumor purity, while DeTin can be used to detect tumor DNA contamination of normal DNA, commonly referred to as “tumor-in-normal” contamination.</p>
+
+<h2 id="contest-gatk-37">ContEst (GATK 3.7)</h2>
+<p>To run ConEst, we can run the following command line code:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -Xmx4096m -jar /usr/local/bin/GenomeAnalysisTK.jar \
 -T ContEst \
 -R ${refFasta} \
@@ -468,16 +472,29 @@
 -l INFO \
 -pf ${popVcf} \
 -o ${sampleName}.contamination.txt \
--L ${dbSnpSixIntervalList} \
+-L ${dbSnpIntervalList} \
 -L ${targetsIntervalList} \
 -isr INTERSECTION \
 --trim_fraction 0.03  \
 --beta_threshold 0.05 \
 -br ${sampleName}.contamination.txt.base_report.txt \
 -mbc 100  \
---min_genotype_depth 30  \
---min_genotype_ratio 0.8
+--min_genotype_depth 30
 </code></pre></div></div>
+<p>The descriptions of the inputs are as follows:<br />
+<strong>-R</strong> Reference FASTA file for the genome reference used (e.g. Hg19 or Hg38)<br />
+<strong>-I</strong> BAM file that we want cross-individual information on<br />
+<strong>-l</strong>  logging level
+<strong>-pf</strong> Reference file containing population allele frequencies for each SNP in HapMap<br />
+<strong>-o</strong> output file name
+<strong>-L</strong> Interval list over which to operate (dbSnpSix sites)<br />
+<strong>-L</strong> Interval list over which to operate (target intervals used for whole-exome bait sets)<br />
+<strong>-isr</strong>  Approach for merging interval lists (here we’re saying only sites included in whole-exome bait set that overlap with dbSNP sites)<br />
+<strong>–beta_threshold</strong> Confidence threshold to determine if the allele fractions at a site disagree with the genotyping array<br />
+<strong>–trim_fraction</strong> At most, what fraction of sites should be trimmed based on the beta threshold<br />
+<strong>-br</strong> base-level information file name<br />
+<strong>-mbc</strong> The minimum number of bases required to determine if there’s contamination in a lane<br />
+<strong>–min_genotype_depth</strong>  Minimum sequencing depth for a site to be considered</p>
 </div>
             <div style="clear:both;">
               <p class="text-center">
