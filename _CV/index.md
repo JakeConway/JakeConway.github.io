@@ -247,7 +247,7 @@ redirect_from: /CV/index.html
                 <p>
                 Liu D, Schilling B, Liu D, Sucker A, Livingstone E, Jerby-Arnon L, Zimmer L, Gutzmer R, Satzger I, Loquai C, Grabbe S, Vokes N, Margolis CA, <strong><u>Conway JR</u></strong>, He MX, Elmarakeby H, Dietlein F, Miao D, Tracy A, Gogas H, Goldinger SM, Utikal J, Blank CU, Rauschenberg R, von Bubnoff D, Krackhardt A, Weide B, Haferkamp S, Kiecker F, Izar B, Garraway L, Regev A, Flaherty K, Paschen A, Van Allen EM, Schadendorf D. Integrative molecular and clinical modeling of clinical outcomes to PD1 blockade in patients with metastatic melanoma. <strong><i>Nature Medicine</i></strong> (2019) 25(12):1916-1927. PMID: 31792460. DOI: 10.1038/s41591-019-0654-5.</p>
                 <p>
-                <strong><u>Conway JR</u></strong>, Warner JL, Rubinstein WS, Miller RS. Next-Generation Sequencing and the Clinical Oncology Workflow: Data Challenges, Proposed Solutions, and a Call to Action. <strong><i>JCO Precision Oncology</i></strong> (2019) (3): 1-10. PMID: TBD. DOI: 10.1200/PO.19.00232.
+                <strong><u>Conway JR</u></strong>, Warner JL, Rubinstein WS, Miller RS. Next-Generation Sequencing and the Clinical Oncology Workflow: Data Challenges, Proposed Solutions, and a Call to Action. <strong><i>JCO Precision Oncology</i></strong> (2019) (3): 1-10. PMID: 32923847. DOI: 10.1200/PO.19.00232.
                 </p>
                 <p>
                 <strong><u>Conway JR</u></strong>, Kofman E, Mo SS, Elmarakeby H, Van Allen E. Genomics of response to immune checkpoint therapies for cancer: implications for precision medicine. <strong><i>Genome Medicine</i></strong> (2018) 10(1):93. PMID: 30497521. DOI: 10.1186/s13073-018-0605-7.
