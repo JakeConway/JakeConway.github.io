@@ -106,7 +106,11 @@ redirect_from: /CV/index.html
                 <p style="text-align:right;"><strong>Predoctoral</strong><br>2019 - present</p>
                 <p style="text-align:right;"><strong>Predoctoral</strong><br>2016 - 2019</p>
                 <h5 style="text-align:right; color:white;">10</h5>
-                 <p style="text-align:right;"><strong>2020</strong><br>
+                <p style="text-align:right;"><strong>2020</strong><br>
+                <i style="color:white;">break</i><br>
+                <i style="color:white;">break</i>
+                </p>
+                <p style="text-align:right;"><strong>2020</strong><br>
                 <i style="color:white;">break</i><br>
                 <i style="color:white;">break</i>
                 </p>
@@ -232,6 +236,9 @@ redirect_from: /CV/index.html
                 $112,470 &emsp; NIH/NHGRI Institutional National Research Service Award (T32; 4T32HG002295-14; PI: Park)
                 </p>
                 <h5>Publications</h5>
+                <p>
+                Gu S, Zhang W, Wang X, Jiang P, Traugh N, Li Z, Meyer C, Stewig B, Xie Y, Bu X, Manos M, Font-Tello A, Gjini E, Lako A, Lim K, <strong><u>Conway JR</u></strong>, Tewari A, Zeng Z, Das Sahu A, Tokheim C, Weirather J, Fu J, Zhang Y, Kroger B, Liang JH, Cejas P, Freeman G, Rodig S, Long H, Gewurz B, Hodi S, Brown M, Liu XS. Therapeutic decoupling of MHC-I and PD-L1 expression potentiates immune checkpoint blockade <strong><i>In review</i></strong>
+                </p>
                 <p>
                 Keenan T, Li T, Vallius T, Guerriero JL, Tayob N, Kochupurakkal B, Davis J, Pastorello R, Tahara RK, Anderson L, <strong><u>Conway JR</u></strong>, He MX, Shannon E, Godin RE, Sorger P, D'Andrea A, Overmoyer B, Winer EP, Mittendorf EA, Van Allen EM, Shapiro GI, Tolaney SM. Clinical efficacy and molecular response correlates of the Wee1 inhibitor adavosertib with cisplatin in metastatic triple-negative breast cancer (mTNBC). <strong><i>In review</i></strong>
                 </p>
