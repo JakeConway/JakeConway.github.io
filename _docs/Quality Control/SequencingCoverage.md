@@ -1,5 +1,5 @@
 ---
-title: Sequencing Coverage
+title: Depth of Sequencing Coverage
 permalink: /docs/SequencingCoverage/
 ---
 
