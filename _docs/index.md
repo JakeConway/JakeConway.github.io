@@ -3,7 +3,6 @@ title: Welcome
 permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
-Welcome! A big motivation for me creating this website was to share some of the knowledge that has helped me tremendously in the completion of my Ph.D. I consider a lot of the analyses and skills discussed in these tutorials essential for a career in computational cancer genomics and data science. I take exceptional pride and joy in mentoring..... Some of my favorite experiences during my Ph.D. occured through taking on mentorship roles, and some even led to publications!
 
 ## Tutorial/Mentoring Style
 
