@@ -1,5 +1,5 @@
 ---
-title: Command line tools
+title: Command line tools (Docker)
 permalink: /docs/commandlinetools/
 ---
 For the tools that run on the command line, I've set up dockers with all of the requirements installed. **One thing of note is that due to the growing size and quantity of data being generated, most of our work involving computational methods for data generation is typically performed on the cloud. However, when performing a deep dive into one or a few samples, it is feasible run these methods locally depending on the size of the input files.** This will be the case with the examples listed throughout the documentation.

@@ -18,7 +18,7 @@
     
     
     {
-      "title": "Command line tools",
+      "title": "Command line tools (Docker)",
       "url": "/docs/commandlinetools/"
     },
   
@@ -314,13 +314,6 @@
     {
       "title": "PyClone",
       "url": "/docs/PyClone/"
-    },
-  
-    
-    
-    {
-      "title": "EXPANDS",
-      "url": "/docs/EXPANDS/"
     },
   
 

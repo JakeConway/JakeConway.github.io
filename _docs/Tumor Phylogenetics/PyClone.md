@@ -23,3 +23,5 @@ PyClone run_analysis_pipeline --in_files ${sep =" " mutation_files} \
 --min_cluster_size 2 \
 --working_dir ~/Downloads
 ```
+
+## Markov Chain Monte Carlo (MCMC)
