@@ -42,7 +42,7 @@ redirect_from: /CV/index.html
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <a class="navbar-brand" href="//">
+            <a class="navbar-brand" href="../../">
                 <span><img src="/assets/img/logonav.png" alt="Logo"></span> Jake Conway
             </a>
         </div>
