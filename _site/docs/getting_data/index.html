@@ -21,11 +21,11 @@
 <meta property="og:url" content="http://localhost:4000/docs/getting_data/" />
 <meta property="og:site_name" content="Jake Conway" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-02-05T05:48:53+01:00" />
+<meta property="article:published_time" content="2023-02-05T21:45:34+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Getting the data" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2023-02-05T05:48:53+01:00","datePublished":"2023-02-05T05:48:53+01:00","description":"For most of the tutorials involving analysis downstream of somatic mutation calling, we’re going to be using the MAF for the skin cutaneous melanoma cohort. To flow seamlessly with the tutorials, we’re going to be downloading and accessing TCGA data through the TCGAbiolinks package from Bioconductor. If you haven’t downloaded Bioconductor or the TCGAbiolinks package yet, please follow the steps in Installing Bioconductor.","headline":"Getting the data","url":"http://localhost:4000/docs/getting_data/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2023-02-05T21:45:34+01:00","datePublished":"2023-02-05T21:45:34+01:00","description":"For most of the tutorials involving analysis downstream of somatic mutation calling, we’re going to be using the MAF for the skin cutaneous melanoma cohort. To flow seamlessly with the tutorials, we’re going to be downloading and accessing TCGA data through the TCGAbiolinks package from Bioconductor. If you haven’t downloaded Bioconductor or the TCGAbiolinks package yet, please follow the steps in Installing Bioconductor.","headline":"Getting the data","url":"http://localhost:4000/docs/getting_data/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -478,7 +478,7 @@
 <h2 id="how-do-i-choose-the-filetype">How do I choose the file.type?</h2>
 <p>If you follow the online vignettes for downloading TCGA data through TCGAbiolinks, you’ll notice that they performed a query step without the <strong>file.type</strong> parameter. For the case of the TCGA-SKCM cohort, there is only 1 MAF file to choose from, so this example is straightforward. However, when downloading somatic mutation data for another TCGA cohort there will likely be multiple MAF files to pick from, and you might be confused on which one to choose.</p>
 
-<p>If we query the TCGA-OV (ovarian cancer) cohort, which we will use when performing mutational signagure analysis with SigMA, you’ll notice there are 9 MAF files to pick from. When choosing which MAF file to use from this resource, there are 3 things I consider:</p>
+<p>If we query the TCGA-OV (ovarian cancer) cohort, which we will use when performing mutational signature analysis with SigMA, you’ll notice there are 9 MAF files to pick from. When choosing which MAF file to use from this resource, there are 3 things to consider:</p>
 <ol>
   <li>The number of samples</li>
   <li>The sequencing platform</li>
@@ -513,14 +513,14 @@
 <p><strong>Illumina GA</strong> is Illumina’s original sequencing technology, which is no longer being updated.<br />
 <strong>ABI capillary sequencing</strong> is basically old school Sanger sequencing. You’ll notice that the number of samples with capillary sequencing are much lower than for the other sequencing technologies.</p>
 
-<p><strong>Illumina HiSeq</strong> and <strong>ABI SOLiD</strong> are the two sequencing technologies that you’d most likely choose between if you were just about to sequence new samples. <strong>Illumina HiSeq</strong> is Illumina’s main workhorse. Compared to <strong>ABI SOLiD</strong> is has longer read lengths (200-250 bases vs. 35), faster turnaround times (3-10 days vs. 7-14), and produces higher throughput (150-800 gigabases/run vs. 155 gigabases/run). On the other hand, <strong>ABI SOLiD</strong> has upwards of a 99.99% base calling accuracy compared to 99.74 by <strong>Illumina HiSeq</strong>. While that doesn’t seem like a huge difference, the number of incorrect base calls adds up given the throughput of these technologies.</p>
+<p><strong>Illumina HiSeq</strong> and <strong>ABI SOLiD</strong> are the two sequencing technologies that you’d most likely choose between (circa 2020) if you were just about to sequence new samples. <strong>Illumina HiSeq</strong> is Illumina’s main workhorse. Compared to <strong>ABI SOLiD</strong> is has longer read lengths (200-250 bases vs. 35), faster turnaround times (3-10 days vs. 7-14), and produces higher throughput (150-800 gigabases/run vs. 155 gigabases/run). On the other hand, <strong>ABI SOLiD</strong> has upwards of a 99.99% base calling accuracy compared to 99.74 by <strong>Illumina HiSeq</strong>. While that doesn’t seem like a huge difference, the number of incorrect base calls adds up given the throughput of these technologies.</p>
 
 <ul>
   <li>The reason for the variation in read lengths and throughput for <strong>Illumina HiSeq</strong> is because there are multiple <strong>Illumina HiSeq</strong> sequencing technologies (e.g. Illumina HiSeq 2500 vs. Illumina HiSeq 2500 Rapid Run).</li>
 </ul>
 
 <h2 id="how-do-i-download-other-data">How do I download other data?</h2>
-<p>To download other data types (e.g. copy number, RNA expression, methylation, clinical data) just changed the <strong>Data.category</strong> and <strong>Data.type</strong> inputs. A list of data categories and data types can be downloaded from: <a href="https://docs.google.com/spreadsheets/d/1f98kFdj9mxVDc1dv4xTZdx8iWgUiDYO-qiFJINvmTZs/export?format=csv&amp;gid=2046985454">https://docs.google.com/spreadsheets/d/1f98kFdj9mxVDc1dv4xTZdx8iWgUiDYO-qiFJINvmTZs/export?format=csv&amp;gid=2046985454</a></p>
+<p>To download other data types (e.g. copy number, RNA expression, methylation, clinical data) just change the <strong>Data.category</strong> and <strong>Data.type</strong> inputs. A list of data categories and data types can be downloaded from: <a href="https://docs.google.com/spreadsheets/d/1f98kFdj9mxVDc1dv4xTZdx8iWgUiDYO-qiFJINvmTZs/export?format=csv&amp;gid=2046985454">https://docs.google.com/spreadsheets/d/1f98kFdj9mxVDc1dv4xTZdx8iWgUiDYO-qiFJINvmTZs/export?format=csv&amp;gid=2046985454</a></p>
 </div>
             <div style="clear:both;">
               <p class="text-center">
