@@ -73,26 +73,23 @@ redirect_from: /CV/index.html
             <div class="col-md-2">
                 <h3 style="text-align:right; color:white;">1</h3>
                 <h5 style="text-align:right; color:white;">2</h5>
-                <p style="text-align:right; color:white;"><strong>3</strong><br><strong>4</strong></p>
+                <p style="text-align:right; color:white;"><strong>3</strong><br></p>
                 <h5 style="text-align:right; color:white;">5</h5>
-                <p style="text-align:right;"><strong>Ph.D.</strong><br>Sep 2016 - present</p>
+                <p style="text-align:right;"><strong>Ph.D.</strong><br><strong>NIH NRSA F31 Fellow</strong><br>Sep 2016 - 2021</p> 
                 <p style="text-align:right;"><strong>B.S.</strong><br>Sep 2012 - May 2016<br>Concentration<br>Minor<br>Honors</p>
                 <h5 style="text-align:right; color:white;">6</h5>
-                <p style="text-align:right;"><strong>Computational Biologist</strong><br>Sep 2015 - Aug 2016<br>
-                    <i style="color:white;">break</i>
+                <p style="text-align:right;"><strong>Biomedical Data Scientist</strong><br>Jul 2021 - Nov 2022
+                </p>
+                <p style="text-align:right;"><strong>Senior Biomedical Data Scientist</strong><br>Nov 2022 - Present
                 </p>
                 <h5 style="text-align:right; color:white;">7</h5>
-                <p style="text-align:right;"><strong>Ph.D. Candidate</strong><br>Jul 2017 - Present<br>
-                <i style="color:white;">break</i>
+                <p style="text-align:right;"><strong>Ph.D. Candidate</strong><br>Jul 2017 - 2021
                 </p>
-                <p style="text-align:right;"><strong>Undergraduate Researcher</strong><br>Jun 2014 - Aug 2014<br>
-                <i style="color:white;">break</i>
+                <p style="text-align:right;"><strong>Undergraduate Researcher</strong><br>Jun 2014 - Aug 2014
                 </p>
-                <p style="text-align:right;"><strong>Undergraduate Researcher</strong><br>May 2015 - Aug 2015<br>
-                <i style="color:white;">break</i>
+                <p style="text-align:right;"><strong>Undergraduate Researcher</strong><br>May 2015 - Aug 2015
                 </p>
                 <h5 style="text-align:right; color:white;">8</h5>
-                <p style="text-align:right;"><strong>Interviewer</strong><br>2019 - 2021</p>
                 <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2020</p>
                 <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2020</p>
                 <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2018 - 2020</p>
@@ -162,7 +159,7 @@ redirect_from: /CV/index.html
                 </p>
                 <h5 style="text-align:right; color:white;">12</h5>
                 <p style="text-align:right;"><strong>R Package</strong><br>
-                400K Downloads
+                1.4M Downloads
                 </p>
                 <p style="text-align:right;"><strong>Shiny App</strong><br>
                 <i style="color:white;">break</i>
@@ -175,11 +172,12 @@ redirect_from: /CV/index.html
             <div class="col-md-8">
                 <h3>Jake Conway</h3>
                 <h5>Current Position</h5>
-                <p><strong>Ph.D. Candidate</strong>, Bioinformatics and Integrative Genomics, Department of Biomedical Informatics, Harvard Medical School <br>
-                <strong>NIH NRSA F31 Fellow</strong>, Van Allen Lab, Dana-Farber Cancer Institute and The Broad Institute of Harvard and MIT</p>
+                <p>Senior Biomedical Data Scientist, <strong>PathAI</strong></p>
                 <h5>Education</h5>
                 <p><strong>Harvard University</strong>, <i>Cambridge, MA, USA </i><br>
-                    Division of Medical Sciences: Bioinformatics and Integrative Genomics</p>
+                Van Allen Lab, Dana-Farber Cancer Institute and The Broad Institute of Harvard and MIT <br>
+                    Division of Medical Sciences, Bioinformatics and Integrative Genomics Program
+                    </p>
                 <p><strong>UMass Lowell</strong>, <i>Lowell, MA, USA</i> <br>
                     Department of Biological Sciences: Biology <br>
                     Bioinformatics <br>
@@ -187,23 +185,18 @@ redirect_from: /CV/index.html
                     <i>Summa Cum Laude</i>
                 </p>
                 <h5>Work Experience</h5>
-                <p>Department of Biomedical Informatics <br>Harvard Medical School, <i>Boston, MA, USA</i><br>
-                    <i style="color:red;">Fill in</i>
+                <p>Biomedical Sciences <br>PathAI, <i>Boston, MA, USA</i>
+                </p>
+                <p>Machine Learning R&D <br>PathAI, <i>Boston, MA, USA</i>
                 </p>
                 <h5>Research Experience</h5>
-                <p>Bioinformatics and Integrative Genomics Program (Van Allen Lab) <br>Harvard Medical School, <i>Boston, MA, USA</i><br>
-                 <i style="color:red;">Fill in</i>
+                <p>Bioinformatics and Integrative Genomics Program (Van Allen Lab) <br>Harvard Medical School, <i>Boston, MA, USA</i>
                 </p>
-                <p>Department of Biomedical Informatics (Gehlenborg Lab) <br>Harvard Medical School, <i>Boston, MA, USA</i><br>
-                 <i style="color:red;">Fill in</i>
+                <p>Department of Biomedical Informatics (Gehlenborg Lab) <br>Harvard Medical School, <i>Boston, MA, USA</i>
                 </p>
-                <p>Department of Biostatistics (Tchetgen Tchetgen Lab) <br>Harvard School of Public Health, <i>Boston, MA, USA</i><br>
-                 <i style="color:red;">Fill in</i>
+                <p>Department of Biostatistics (Tchetgen Tchetgen Lab) <br>Harvard School of Public Health, <i>Boston, MA, USA</i>
                 </p>
-                <h5>Professional Activities</h5>
-                <p>Computational Biologist Positions, Van Allen Lab<br>
-                Dana-Farber Cancer Institute, <i>Boston, MA, USA</i>
-                </p>
+                <h5>Teaching</h5>
                 <p>Computational Statistics for Biomedical Informatics (BMI 715; Instructors: Nathalie Vladis, Ph.D.)<br>
                 Harvard Medical School, <i>Boston, MA, USA</i>
                 </p>
