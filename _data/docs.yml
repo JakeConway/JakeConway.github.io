@@ -5,21 +5,6 @@
   - commandlinetools
   - getting_data
 
-- title: Alignment
-  docs:
-  - OverviewAlignment
-  - BWA
-  - CleanSam
-  - SortSam
-  - MarkDuplicates
-  - AddOrReplaceReadGroups
-  - BuildBamIndex
-  - RealignerTargetCreator
-  - IndelRealigner
-  - BaseRecalibration
-  - PrintReads
-  - PuttingItAllTogether
-
 - title: Quality Control
   docs:
   - OverviewQC
