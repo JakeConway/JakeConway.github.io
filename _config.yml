@@ -50,6 +50,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: stats
+    type: docs
+  values:
+    layout: docs
+    sectionid: stats
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _CV
     type: docs
   values:
@@ -63,6 +72,9 @@ collections:
     permalink: /:collection/:path/
     output: true
   docs:
+    permalink: /:collection/:path/
+    output: true
+  stats:
     permalink: /:collection/:path/
     output: true
   posts:

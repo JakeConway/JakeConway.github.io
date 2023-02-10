@@ -49,7 +49,8 @@ redirect_from: /CV/index.html
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/CV/home/">CV</a></li>
-                <li ><a href="/docs/home/">Docs</a></li>
+                <li ><a href="/docs/home/">Comp Bio</a></li>
+                <li ><a href="/stats/home/">Stats</a></li>
                 <li ><a href="/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
             </ul>
             <div class="navbar-right">
