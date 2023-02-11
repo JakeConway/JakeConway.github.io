@@ -50,7 +50,7 @@ redirect_from: /CV/index.html
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/CV/home/">CV</a></li>
                 <li ><a href="/docs/home/">Comp Bio</a></li>
-                <li ><a href="/stats/home/">Stats</a></li>
+                <li ><a href="/stats/home/">Stats+ML</a></li>
                 <li ><a href="/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
             </ul>
             <div class="navbar-right">
