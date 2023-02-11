@@ -50,7 +50,7 @@ defaults:
       type: "WebPage"
 
 - scope:
-    path: stats
+    path: _stats
     type: docs
   values:
     layout: docs
