@@ -79,9 +79,9 @@ redirect_from: /CV/index.html
                 <p style="text-align:right;"><strong>Ph.D.</strong><br><strong>NIH NRSA F31 Fellow</strong><br>Sep 2016 - 2021</p> 
                 <p style="text-align:right;"><strong>B.S.</strong><br>Sep 2012 - May 2016<br>Concentration<br>Minor<br>Honors</p>
                 <h5 style="text-align:right; color:white;">6</h5>
-                <p style="text-align:right;"><strong>Biomedical Data Scientist</strong><br>Jul 2021 - Nov 2022
-                </p>
                 <p style="text-align:right;"><strong>Senior Biomedical Data Scientist</strong><br>Nov 2022 - Present
+                </p>
+                <p style="text-align:right;"><strong>Biomedical Data Scientist</strong><br>Jul 2021 - Nov 2022
                 </p>
                 <h5 style="text-align:right; color:white;">7</h5>
                 <p style="text-align:right;"><strong>Ph.D. Candidate</strong><br>Jul 2017 - 2021
@@ -101,14 +101,13 @@ redirect_from: /CV/index.html
                 <p style="text-align:right;"><strong>Teaching Assistant</strong><br>2014</p>
                 <p style="text-align:right;"><strong>Tutor</strong><br>2014 - 2015</p>
                 <h5 style="text-align:right; color:white;">9</h5>
-                <p style="text-align:right;"><strong>Predoctoral</strong><br>2019 - present</p>
+                <p style="text-align:right;"><strong>Predoctoral</strong><br>2019 - 2021</p>
                 <p style="text-align:right;"><strong>Predoctoral</strong><br>2016 - 2019</p>
                 <h5 style="text-align:right; color:white;">10</h5>
-                <p style="text-align:right;"><strong>2021</strong><br>
-                <i style="color:white;">break</i><br>
+                <p style="text-align:right;"><strong>2023</strong><br>
                 <i style="color:white;">break</i>
                 </p>
-                <p style="text-align:right;"><strong>2021</strong><br>
+                <p style="text-align:right;"><strong>2023</strong><br>
                 <i style="color:white;">break</i><br>
                 <i style="color:white;">break</i>
                 </p>
@@ -118,17 +117,12 @@ redirect_from: /CV/index.html
                 </p>
                 <p style="text-align:right;"><strong>2020</strong><br>
                 <i style="color:white;">break</i><br>
-                <i style="color:white;">break</i>
-                </p>
-                <p style="text-align:right;"><strong>2020</strong><br>
-                <i style="color:white;">break</i>
                 </p>
                 <p style="text-align:right;"><strong>2020</strong><br>
                 <i style="color:white;">break</i> <br>
-                <i style="color:white;">break</i>
+                <i style="color:white;">break</i> 
                 </p>
-                <p style="text-align:right;"><strong>2019</strong><br>
-                <i style="color:white;">break</i> <br>
+                <p style="text-align:right;"><strong>2020</strong><br>
                 <i style="color:white;">break</i> <br>
                 <i style="color:white;">break</i>
                 </p>
@@ -136,16 +130,12 @@ redirect_from: /CV/index.html
                 <i style="color:white;">break</i>
                 </p>
                 <p style="text-align:right;"><strong>2018</strong><br>
-                <i style="color:white;">break</i>
-                </p>
-                <p style="text-align:right;"><strong>2018</strong><br>
-                <i style="color:white;">break</i><br>
                 <i style="color:white;">break</i>
                 </p>
                 <p style="text-align:right;"><strong>2017</strong><br>
                 <i style="color:white;">break</i>
                 </p>
-                <h5 style="text-align:right; color:white;">11</h5>
+                <h5 style="text-align:right; color:white;">10</h5>
                 <p style="text-align:right;"><strong>Poster</strong><br>
                 2019
                 </p>
@@ -190,7 +180,7 @@ redirect_from: /CV/index.html
                 </p>
                 <p>Machine Learning R&D <br>PathAI, <i>Boston, MA, USA</i>
                 </p>
-                <h5>Research Experience</h5>
+                <h5>Academic Research Experience</h5>
                 <p>Bioinformatics and Integrative Genomics Program (Van Allen Lab) <br>Harvard Medical School, <i>Boston, MA, USA</i>
                 </p>
                 <p>Department of Biomedical Informatics (Gehlenborg Lab) <br>Harvard Medical School, <i>Boston, MA, USA</i>
@@ -233,15 +223,15 @@ redirect_from: /CV/index.html
                 <p>Training in Bioinformatics and Integrative Genomics<br>
                 $112,470 &emsp; NIH/NHGRI Institutional National Research Service Award (T32; 4T32HG002295-14; PI: Park)
                 </p>
-                <h5>Publications</h5>
+                <h5>Publications (Considerable Contributions)</h5>
                 <p>
-                Gu S, Zhang W, Wang X, Jiang P, Traugh N, Li Z, Meyer C, Stewig B, Xie Y, Bu X, Manos M, Font-Tello A, Gjini E, Lako A, Lim K, <strong><u>Conway JR</u></strong>, Tewari A, Zeng Z, Das Sahu A, Tokheim C, Weirather J, Fu J, Zhang Y, Kroger B, Liang JH, Cejas P, Freeman G, Rodig S, Long H, Gewurz B, Hodi S, Brown M, Liu XS. Therapeutic decoupling of MHC-I and PD-L1 expression potentiates immune checkpoint blockade <strong><i>In review</i></strong>
+                    <strong><u>Conway JR</u></strong>,, Tewari AK, Camp SY, Han S, Crowdis J, He MX, Nyame YA, AlDubayan SH, Schultz N, Szallasi Z, Pomerantz MM, Freedman ML, Fong L, Nelson PS, Brown M, Salari K, Van Allen EM. <strong><i>bioRxiv</i></strong> (2023). DOI: 10.1101/2023.03.23.533974
                 </p>
                 <p>
-                Keenan T, Li T, Vallius T, Guerriero JL, Tayob N, Kochupurakkal B, Davis J, Pastorello R, Tahara RK, Anderson L, <strong><u>Conway JR</u></strong>, He MX, Shannon E, Godin RE, Sorger P, D'Andrea A, Overmoyer B, Winer EP, Mittendorf EA, Van Allen EM, Shapiro GI, Tolaney SM. Clinical efficacy and molecular response correlates of the Wee1 inhibitor adavosertib with cisplatin in metastatic triple-negative breast cancer (mTNBC). <strong><i>In review</i></strong>
+                    <strong><u>Conway JR</u></strong>, Pouryahya M, Gindin Y, Pan DZ, Carrasco-Zevallos OM, Mountain V, Subramanian GM, Montalto MC, Resnick M, Beck AH, Huss RS, Myers RP, Taylor-Weiner A, Wapinski I, Chung C. Integration of deep learning-based histopathology and transcriptomics reveals key genes associated with fibrogenesis in patients with advanced NASH. <strong><i>Cell Reports Medicine</i></strong> (2023) 4(4):101016. PMID: 37075704. DOI: 10.1016/j.xcrm.2023.101016.
                 </p>
                 <p>
-                Tewari AK, Cheung ATM, Crowdis J, <strong><u>Conway JR</u></strong>, Camp SY, Wankowicz SA, Livitz D, Park J, Lis RT, Bosma-Moody A, He MX, AlDubayan SH, Zhang Z, McKay RR, Leshchiner I, Balk S, Getz G, Taplin ME, Van Allen EM. Molecular features of exceptional response to neoadjuvant anti-androgen therapy in poor-risk localized prostate cancer. <strong><i>In review</i></strong>
+                Tewari AK, Cheung ATM, Crowdis J, <strong><u>Conway JR</u></strong>, Camp SY, Wankowicz SA, Livitz D, Park J, Lis RT, Bosma-Moody A, He MX, AlDubayan SH, Zhang Z, McKay RR, Leshchiner I, Balk S, Getz G, Taplin ME, Van Allen EM. Molecular features of exceptional response to neoadjuvant anti-androgen therapy in poor-risk localized prostate cancer. <strong><i>Cell Reports</i></strong> (2021) 36(10):109665. PMID: 34496240. DOI: 10.1016/j.celrep.2021.109665. 
                 </p>
                 <p>
                 <strong><u>Conway JR</u></strong>, Taylor-Weiner A, Braun D, Bakouny Z, Choueiri TK, Van Allen EM. PBRM1 loss-of-function mutations and response to immune checkpoint blockade in clear cell renal cell carcinoma. <strong><i>medRxiv</i></strong> (2020). DOI: 10.1101/2020.10.30.20222356.
@@ -253,15 +243,10 @@ redirect_from: /CV/index.html
                 AlDubayan SH, <strong><u>Conway JR</u></strong>, Witkowski L, Kofman E, Reardon B, Camp SY, Han S, Elmarakeby H, Al-Rubaish AM, Al-Sulaiman AA, Al-Ali AK, Taylor-Weiner A, Van Allen EM. Detection of Pathogenic Variants with Germline Genetic Testing Using Deep Learning vs Standard Methods in Patients with Prostate Cancer and Melanoma. <strong><i>JAMA</i></strong> (2020) 324(19):1957-1969. PMID: 33201204. DOI: 10.1001/jama.2020.20457.
                 </p>
                 <p>
-                Liu D, Schilling B, Liu D, Sucker A, Livingstone E, Jerby-Arnon L, Zimmer L, Gutzmer R, Satzger I, Loquai C, Grabbe S, Vokes N, Margolis CA, <strong><u>Conway JR</u></strong>, He MX, Elmarakeby H, Dietlein F, Miao D, Tracy A, Gogas H, Goldinger SM, Utikal J, Blank CU, Rauschenberg R, von Bubnoff D, Krackhardt A, Weide B, Haferkamp S, Kiecker F, Izar B, Garraway L, Regev A, Flaherty K, Paschen A, Van Allen EM, Schadendorf D. Integrative molecular and clinical modeling of clinical outcomes to PD1 blockade in patients with metastatic melanoma. <strong><i>Nature Medicine</i></strong> (2019) 25(12):1916-1927. PMID: 31792460. DOI: 10.1038/s41591-019-0654-5.</p>
-                <p>
                 <strong><u>Conway JR</u></strong>, Warner JL, Rubinstein WS, Miller RS. Next-Generation Sequencing and the Clinical Oncology Workflow: Data Challenges, Proposed Solutions, and a Call to Action. <strong><i>JCO Precision Oncology</i></strong> (2019) (3): 1-10. PMID: 32923847. DOI: 10.1200/PO.19.00232.
                 </p>
                 <p>
                 <strong><u>Conway JR</u></strong>, Kofman E, Mo SS, Elmarakeby H, Van Allen E. Genomics of response to immune checkpoint therapies for cancer: implications for precision medicine. <strong><i>Genome Medicine</i></strong> (2018) 10(1):93. PMID: 30497521. DOI: 10.1186/s13073-018-0605-7.
-                </p>
-                <p>
-                Sheng W, LaFleur MW, Nguyen TH, Chen S, Chakravarthy A, <strong><u>Conway JR</u></strong>, Li Y, Chen H, Yang H, Hsu PH, Van Allen EM, Freeman GJ, De Carvalho DD, He HH, Sharpe AH, Shi Y. LSD1 Ablation Stimulates Anti-tumor Immunity and Enables Checkpoint Blockade. <strong><i>Cell</i></strong> (2018) 174(3):549-563.e19. PMID: 29937226. DOI: 10.1016/j.cell.2018.05.052.
                 </p>
                 <p>
                 <strong><u>Conway JR</u></strong>, Lex A, Gehlenborg N. UpSetR: an R package for the visualization of intersecting sets and their properties. <strong><i>Bioinformatics</i></strong> (2017) 33(18):2938-2940. PMID: 28645171. DOI: 10.1093/bioinformatics/btx364.
