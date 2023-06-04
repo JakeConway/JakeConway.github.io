@@ -105,6 +105,7 @@ redirect_from: /CV/index.html
                 <p style="text-align:right;"><strong>Predoctoral</strong><br>2016 - 2019</p>
                 <h5 style="text-align:right; color:white;">10</h5>
                 <p style="text-align:right;"><strong>2023</strong><br>
+                <i style="color:white;">break</i><br>
                 <i style="color:white;">break</i>
                 </p>
                 <p style="text-align:right;"><strong>2023</strong><br>
@@ -225,7 +226,7 @@ redirect_from: /CV/index.html
                 </p>
                 <h5>Publications (Considerable Contributions)</h5>
                 <p>
-                    <strong><u>Conway JR</u></strong>,, Tewari AK, Camp SY, Han S, Crowdis J, He MX, Nyame YA, AlDubayan SH, Schultz N, Szallasi Z, Pomerantz MM, Freedman ML, Fong L, Nelson PS, Brown M, Salari K, Van Allen EM. <strong><i>bioRxiv</i></strong> (2023). DOI: 10.1101/2023.03.23.533974
+                    <strong><u>Conway JR</u></strong>,, Tewari AK, Camp SY, Han S, Crowdis J, He MX, Nyame YA, AlDubayan SH, Schultz N, Szallasi Z, Pomerantz MM, Freedman ML, Fong L, Nelson PS, Brown M, Salari K, Van Allen EM. Analysis of evolutionary dynamics and clonal architecture in prostate cancer. <strong><i>bioRxiv</i></strong> (2023). DOI: 10.1101/2023.03.23.533974
                 </p>
                 <p>
                     <strong><u>Conway JR</u></strong>, Pouryahya M, Gindin Y, Pan DZ, Carrasco-Zevallos OM, Mountain V, Subramanian GM, Montalto MC, Resnick M, Beck AH, Huss RS, Myers RP, Taylor-Weiner A, Wapinski I, Chung C. Integration of deep learning-based histopathology and transcriptomics reveals key genes associated with fibrogenesis in patients with advanced NASH. <strong><i>Cell Reports Medicine</i></strong> (2023) 4(4):101016. PMID: 37075704. DOI: 10.1016/j.xcrm.2023.101016.
